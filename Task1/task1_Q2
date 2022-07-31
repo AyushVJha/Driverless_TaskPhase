@@ -1,0 +1,10 @@
+my_list= [1,2,3,4,56,7,8,9,0]
+print('Original list is:', my_list)
+def rev(lst):
+    if len(lst) == 0:
+        return []
+    return [lst[-1]] + rev(lst[:-1])
+print("The Reversed list:", rev(my_list))
+
+#------------------------------------------------------------------
+# -------------------------------------------------------------------
